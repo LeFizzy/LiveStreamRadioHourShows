@@ -19,9 +19,19 @@ THREAD_COUNT="0"
 MUSIC_STREAM_URL="http://server/radio.mp3"
 
 #
-# Filepath of your background video. Must be a streamable MKV, FLV or MP4 file
+# Days, Hours, minutes where the given show is running
+# Eg. if you have two shows each day, from monday to sunday where 1st show is starts at 8am, and ends at 9am.
+# Insert your show times to each like as strings eg. "16:00-17:00"
 #
-BACKGROUND="${SCRIPT_DIR}/media/sample_background.mkv"
+SHOW_TIMES=(
+        "16:00-17:00"
+        "17:00-19:00"
+    )
+
+SHOW_BACKGROUNDS=(
+  "${SCRIPT_DIR}/media/sample_background.mkv"
+  "${SCRIPT_DIR}/media/sample_background.mkv"
+)
 
 #
 # RTMP urls you wish to stream to
